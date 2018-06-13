@@ -12,7 +12,7 @@ public class Main {
 	    IExecutorService executor = hazelcastInstance.getExecutorService( "executorServ" );
 
 	    //submit the task to the executor
-	      executor.execute( new HazelcastCodingChallenge( "We are Started!" ) );
+	      executor.submit( new HazelcastCodingChallenge( "We are Started!" ) );
 
 	  }
 	}
